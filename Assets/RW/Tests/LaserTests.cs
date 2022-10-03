@@ -26,7 +26,7 @@ public class LaserTest
     [UnityTest]
     public IEnumerator LaserDestroysAsteroid()
     {
-        GameObject asteroid = game.GetSpawner().SpawnAsteroid();
+        GameObject asteroid = game.GetSpawner().SpawnAsteroid(); 
         asteroid.transform.position = Vector3.zero;
         GameObject laser = game.GetShip().SpawnLaser();
         laser.transform.position = Vector3.zero;
